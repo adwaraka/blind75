@@ -6,14 +6,14 @@ def minRotatedArray(arr: list):
 
     while left < right:  # only less; NOT less than equal
         mid = (left + right) >> 1
-        print(left, right)
+        # print(left, right)
         if arr[right] <= arr[mid]:
             left = mid + 1
         else:
             right = mid
     
-    return arr[left]
+    return arr[left], left
         
 
-arr = [8, 9, 10, 1, 2, 3, 7]
+arr = [8, 9, -10, 0, 1, 2, 3, 7]
 print(minRotatedArray(arr))
