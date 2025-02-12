@@ -24,7 +24,8 @@ class Graph():
                 if self.isCyclic(connectedNode, current, visited):
                     return True
 
-            # one of the connected node should not be the parent!
+            # so node has been visited; check if
+            # connected node should not be the parent!
             elif connectedNode != parent:
                 return True
 
