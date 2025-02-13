@@ -12,7 +12,7 @@ def firstMissingPositive(nums):
         while nums[i] >= 1 and nums[i] <= numsLength and nums[i] != nums[nums[i] - 1]:
                 swap(i, nums[i]-1)
 
-    # there will be one index where the index[x] == x+1
+    # there will be one index where the nums[x] == x+1
     # condition will fail. That is the result.
     for i in range(numsLength):
         if nums[i] != i + 1:
