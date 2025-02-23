@@ -23,7 +23,7 @@ def glider(maxDistance, destination, airports):
             return -1
 
         stops+=1
-        # new window begins
+        # set new beginning for a new window begins
         i = j
     return stops
 
