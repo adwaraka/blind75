@@ -3,7 +3,7 @@ def generateParantheses(n: int) -> list:
     res, stack = [], []
 
     def backtrack(openB: int, closeB: int):
-        # number of opened and closed parans = n
+        # number of opened and closed parans should match 'n'
         if openB == closeB == n:
             res.append("".join(stack))
 

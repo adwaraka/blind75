@@ -1,5 +1,5 @@
 # find the number of times the array has been rotated.
-# also for find the minimum in the rotated array
+# also for 'find the minimum in the rotated array' problem
 
 def minRotatedArray(arr: list):
     left, right = 0, len(arr) - 1
