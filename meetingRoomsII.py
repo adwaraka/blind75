@@ -7,7 +7,7 @@ without any conflicts.
 
 def meetingRoomsII(intervals):
     startTime = sorted([i[0] for i in intervals])
-    endTime = sorted(i[1] for i in intervals)
+    endTime = sorted([i[1] for i in intervals])
     # print(startTime, endTime)
     ptr1, ptr2, count, result = 0, 0, 0, 0
     while ptr1 < len(startTime):
