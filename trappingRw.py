@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/trapping-rain-water/
 # https://www.enjoyalgorithms.com/blog/trapping-rain-water
 
-# using leftMax and rightMax array coz 2-ptr is hard!!
 # Big O(N) but uses extra storage
 def trappingRw(heights: list) -> int:
     n = len(heights)
@@ -27,5 +26,31 @@ def trappingRw(heights: list) -> int:
 
     return maxResult
 
+
+# https://codewitharyan.com/tech-blogs/trapping-rain-water
+# for two pointer solution
+def trappingRwTwoPtr(heights: list) ->int:
+    left, right, result = 0, len(heights) - 1, 0
+    leftMax, rightMax = 0, 0
+
+    while left <= right:
+        leftMax = max(leftMax, heights[left])
+        rightMax = max(rightMax, heights[right])
+
+        if leftMax < rightMax:
+            # left is less than right so look at left
+            # this will influence the max height since
+            # left maximum cannot be exceeded by water
+            result += leftMax - heights[left]
+            left+=1
+        else:
+            result += rightMax - heights[right]
+            right-=1
+
+    return result
+
 heights = [1, 0, 2, 1, 0, 1, 2, 1, 2, 1]
 print(trappingRw(heights))
+
+heights = [1, 0, 2, 1, 0, 1, 2, 1, 2, 1]
+print(trappingRwTwoPtr(heights))
