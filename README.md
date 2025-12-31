@@ -1,1 +1,2 @@
-Adding blind75 problem solutions (and some others) with vital comments. https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
+Adding blind75 problem solutions (and some additional others) with vital comments.
+https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
