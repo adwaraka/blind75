@@ -10,7 +10,7 @@ jobs:
       - name: Enforce Branch Name
         run: |
           BRANCH_NAME="${{ github.head_ref }}"
-          REGEX="^(feature|hotfix|patch)/[a-z0-9._-]+$"
+          REGEX="^(feature|hotfix|patch|problem)/[a-z0-9._-]+$"
 
           if [[ ! $BRANCH_NAME =~ $REGEX ]]; then
             echo "ERROR: Branch name '$BRANCH_NAME' does not match the required format."
