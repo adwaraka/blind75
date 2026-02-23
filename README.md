@@ -1,2 +1,3 @@
 Adding blind75 problem solutions (and some additional others) with vital comments.
 https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
+https://interviewsolver.com/interview-questions/<random_company>
