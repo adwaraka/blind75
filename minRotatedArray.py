@@ -16,4 +16,7 @@ def minRotatedArray(arr: list):
         
 
 arr = [8, 9, -10, 0, 1, 2, 3, 7]
-print(minRotatedArray(arr))
+assert minRotatedArray(arr)[1] == 2
+
+arr1 = [1, 2, 3, 7, 8, 9]
+assert minRotatedArray(arr1)[1] == 0
